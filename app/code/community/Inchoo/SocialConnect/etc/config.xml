@@ -37,7 +37,7 @@
 <config>
     <modules>
         <Inchoo_SocialConnect>
-            <version>0.3.7</version>
+            <version>0.3.8</version>
         </Inchoo_SocialConnect>
     </modules>
     <default>
@@ -108,4 +108,15 @@
             </inchoo_socialconnect_setup>
         </resources>
     </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Inchoo_SocialConnect>
+                    <files>
+                        <default>Inchoo_SocialConnect.csv</default>
+                    </files>
+                </Inchoo_SocialConnect>
+            </modules>
+        </translate>
+    </adminhtml>
 </config>

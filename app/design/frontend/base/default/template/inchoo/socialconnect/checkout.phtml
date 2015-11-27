@@ -61,5 +61,12 @@
             <?php echo $this->getChildHtml('inchoo_socialconnect_checkout_linkedin_button')?>
         </div>
         <?php endif; ?>        
+        <?php if($this->_vkEnabled()): ?>
+        <div class="<?php echo $this->_getCol(); ?> inchoo-socialconnect-checkout-vk">
+            <h3><?php echo $this->__('Vk Connect') ?></h3>
+            <p><?php echo $this->__('You can continue with checkout using your <strong>Vk</strong> account.') ?></p>
+            <?php echo $this->getChildHtml('inchoo_socialconnect_checkout_vk_button')?>
+        </div>
+        <?php endif; ?>
     </div>
 </div>

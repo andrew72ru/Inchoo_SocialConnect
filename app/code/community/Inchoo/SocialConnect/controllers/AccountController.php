@@ -107,4 +107,14 @@ class Inchoo_SocialConnect_AccountController extends Mage_Core_Controller_Front_
         $this->renderLayout();
     }
 
+    public function vkAction()
+    {
+        $userInfo = Mage::getSingleton('inchoo_socialconnect/vk_info_user')
+            ->load();
+
+        Mage::register('inchoo_socialconnect_vk_userinfo', $userInfo);
+
+        $this->loadLayout();
+        $this->renderLayout();
+    }
 }

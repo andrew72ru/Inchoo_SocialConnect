@@ -36,13 +36,13 @@ $installer->startSetup();
 
 $installer->setCustomerAttributes(
     [
-        'inchoo_socialconnect_lid' => [
+        'inchoo_socialconnect_vkid' => [
             'type' => 'text',
             'visible' => false,
             'required' => false,
             'user_defined' => false
         ],
-        'inchoo_socialconnect_ltoken' => [
+        'inchoo_socialconnect_vktoken' => [
             'type' => 'text',
             'visible' => false,
             'required' => false,
